@@ -19,17 +19,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     { 
       nom: 'Roger',
       prenom: 'Pierre',
-      age: 27
+      age: 27,
+      stars: 1
     },
     { 
       nom: 'Albert',
       prenom: 'Louis',
-      age: 37
+      age: 37,
+      stars: 3
     },
     { 
       nom: 'Philippe',
       prenom: 'Jean-CLaude',
-      age: 21
+      age: 21,
+      stars: 5
     }
   ];
 
@@ -54,7 +57,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     // App
     if(app.params) {
       for (var i = 0; i < app.databyname.length; i++) {
-        if(app.params.name == app.databyname[i]) app.user = app.databyname[i];
+        if(app.params.name == app.databyname[i].nom) app.user = app.databyname[i];
       };
     }
   });

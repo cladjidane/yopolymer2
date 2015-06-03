@@ -1,0 +1,31 @@
+<dom-module id="user-badge">
+  <style>
+    :host .note{
+      display: inline-block;
+      padding: 2px 5px;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 1;
+      color: #E91E63;
+      border-radius: 20px;
+    }
+  </style>
+  <template>
+    
+    <p class="note">
+      <span>{{user.stars}}</span>
+      <iron-icon icon="stars"></iron-icon>
+    </p>
+
+    <p>Nom : <span>{{user.nom}}</span> --- Prénom : <span>{{user.prenom}}</span></p>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'user-badge',
+    properties: {
+      user: String
+    },
+  });
+</script>
