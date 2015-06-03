@@ -11,13 +11,17 @@
     }
   </style>
   <template>
-    
-    <p class="note">
-      <span>{{user.stars}}</span>
-      <iron-icon icon="stars"></iron-icon>
-    </p>
 
-    <p>Nom : <span>{{user.nom}}</span> --- Prénom : <span>{{user.prenom}}</span></p>
+    <h2>
+      <span>{{user.nom}}</span> <span>{{user.prenom}}</span>
+      
+      <div class="note">
+        <span>{{user.stars}}</span>
+        <iron-icon icon="stars"></iron-icon>
+      </div>
+    </h2>
+
+    <p>Age : <span>{{user.age}}</span></p>
   </template>
 </dom-module>
 

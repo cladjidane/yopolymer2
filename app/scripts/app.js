@@ -53,13 +53,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     // Ensure the drawer is hidden on desktop/tablet
     var drawerPanel = document.querySelector('#paperDrawerPanel');
     drawerPanel.forceNarrow = true;
-
-    // App
-    if(app.params) {
-      for (var i = 0; i < app.databyname.length; i++) {
-        if(app.params.name == app.databyname[i].nom) app.user = app.databyname[i];
-      };
-    }
   });
 
 })(document);

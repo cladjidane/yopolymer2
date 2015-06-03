@@ -52,6 +52,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
+  <link rel="import" href="list-users.html">
   <link rel="import" href="tiny-badge.html">
   <link rel="import" href="stars-badge.html">
   <link rel="import" href="user-badge.html">
@@ -120,37 +121,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
 
             <section data-route="users">
-              <paper-material elevation="1">
-                <h2 class="paper-font-display2">Users</h2>
-                <p>This is the users section by params</p>
-                <a href="/users/Rob/Winner">Rob</a></p>
-                <p>This is the users section by data object</p>
-                <a href="/users/Albert">Albert</a></p>
-                <a href="/users/Louis">Louis</a></p>
-                <a href="/users/Philippe">Philippe</a></p>
-              </paper-material>
+              <list-users></list-users>
             </section>
 
             <section data-route="user-info">
               <paper-material elevation="1">
-
-                <h2 class="paper-font-display2">
-
-                User by params:<span>{{params.name}}</span>
-                <tiny-badge>{{params.stars}}</tiny-badge>
-
-                </h2>
-
-                <p class="paper-font-display2">
-
-                User by data:<span>{{user.nom}}</span>
-                <!--<tiny-badge>{{params.stars}}</tiny-badge>-->
-                
                 <user-badge user={{user}}></user-user>
-
-                </p>
-                
-                <div>This is <span>{{params.name}}</span>'s section</div>
               </paper-material>
             </section>
 

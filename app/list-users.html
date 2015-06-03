@@ -1,0 +1,29 @@
+<dom-module id="list-users">
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+  <template>
+    <paper-material elevation="1">
+        <h2 class="paper-font-display2">Users</h2>
+        <a href="/users/Albert">Albert</a></p>
+        <a href="/users/Roger">Roger</a></p>
+        <a href="/users/Philippe">Philippe</a></p>
+      </paper-material>
+  </template>
+
+</dom-module>
+  <script>
+    (function () {
+      Polymer({
+        is: 'list-users',
+        listeners: {
+          'tap': 'refreshUser'
+        },
+        refreshUser: function() {
+          console.log('Add event on click/tap');
+        }
+      });
+    })();
+  </script>

@@ -26,6 +26,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     page('/users/:name', function (data) {
       app.route = 'user-info';
       app.params = data.params;
+
+      // App
+      for (var i = 0; i < app.databyname.length; i++) {
+        if(app.params.name == app.databyname[i].nom) {
+          // Create or Update user object
+          app.user = app.databyname[i];
+        }
+      };
     });
 
     page('/contact', function () {
